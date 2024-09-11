@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quick Think is a quiz game designed to challenge your general knowledge and keep track of your score as you play.
 
-## Getting Started
+The project is currently in the planning phase, which you can view here: Figma Board - https://www.figma.com/board/xBfpknPYdGEmMZfPpDEm62/W12-Project?node-id=0-1&node-type=canvas&t=nvCWHuwQHRfBbGhW-0
 
-First, run the development server:
+## This app is part of a group project within the Tech Educators Bootcamp and will be built using Next.js and React. Key features include user authentication, modern UI design, and a fully functional, mobile-first responsive layout. The app will be deployed online, allowing users to play and interact with it by September 20th. Our team—comprising John, Noah, Sam, and myself—will be contributing to this project daily via our shared repository.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+User Stories
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- The user will be able to navigate dynamic routes, leading to pages generated for newly added content.
+- The user will interact with an app that integrates a database and server, potentially using server-side rendering with Next.js, though this is not required.
+- The user will be able to add various types of content, such as items, posts, comments, or images, which will be saved to the database and associated with their account.
+- The user will need to authenticate, with authentication extending to authorization features. This may include access control to an admin area or the ability to review and edit only their own content.
+- The user will experience a mobile-responsive application, optimized for performance across different devices.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Stretch Goals
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- The user will be able to create new quiz questions, categories, and difficulty levels as either an admin or regular user.
+- The user will be able to compete with other users in real-time.
+- The user will have access to a personalized scoreboard, where they can check their rankings alongside other players.
