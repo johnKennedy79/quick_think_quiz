@@ -1,20 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #fff;
+  background: rgb(226, 235, 6);
+  background: radial-gradient(
+    circle,
+    rgba(226, 235, 6, 1) 25%,
+    rgba(0, 161, 58, 1) 86%
+  );
 }
 
 .signIn {
-    background-color: #000;
-    border-radius: 10px;
-    color: #fff;
-    width: 50px;
-    height: 30px;
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+  width: 50px;
+  height: 30px;
 }
