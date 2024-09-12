@@ -8,15 +8,15 @@ import {
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const manname = localFont({
+  src: "./fonts/Maname-Regular.ttf",
+  variable: "--font-maname-reg",
+  weight: "400",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const marcellus = localFont({
+  src: "./fonts/Marcellus-Regular.ttf",
+  variable: "--font-marcellus-reg",
+  weight: "400",
 });
 
 export const metadata = {
@@ -29,10 +29,10 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${marcellus.variable} ${manname.variable} antialiased`}
         >
           <SignedOut>
-            <SignInButton className="signIn"/>
+            <SignInButton className="signIn" />
           </SignedOut>
           <SignedIn>
             <UserButton />
