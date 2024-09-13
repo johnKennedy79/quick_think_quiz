@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${marcellus.variable} ${manname.variable} antialiased`}
+          className={`${marcellus.variable} ${manname.variable} antialiased flex flex-col items-center`}
         >
           <header>
             <h1>Quick Think</h1>
@@ -53,6 +53,14 @@ export default function RootLayout({ children }) {
             <UserButton />
           </SignedIn>
           {children}
+          <footer className="mb-8">
+            <SignedOut>
+              <SignInButton className={`${marcellus.variable} signIn`} />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </footer>
         </body>
       </html>
     </ClerkProvider>
