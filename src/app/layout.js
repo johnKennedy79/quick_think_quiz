@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
           <SignedOut>
             <SignInButton className={`${marcellus.variable} signIn`} />
           </SignedOut>
-          <SignedIn>
+          <SignedIn >
             <nav>
               {/* <b> */}
               <Link href="/UserProfile">User Profile</Link>
