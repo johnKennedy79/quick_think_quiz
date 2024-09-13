@@ -28,11 +28,9 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body
-          className={`${marcellus.variable} ${manname.variable} antialiased`}
-        >
+        <body className={`${marcellus.variable} ${manname.variable}`}>
           <SignedOut>
-            <SignInButton className="signIn" />
+            <SignInButton className={`${marcellus.variable} signIn`} />
           </SignedOut>
           <SignedIn>
             <UserButton />
