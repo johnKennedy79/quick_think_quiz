@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
         <body
           className={`${marcellus.variable} ${manname.variable} antialiased`}
         >
+          <h1>Quick Think</h1>
           <SignedOut>
             <SignInButton className="signIn" />
           </SignedOut>
