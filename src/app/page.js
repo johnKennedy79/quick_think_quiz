@@ -1,9 +1,15 @@
-import { db } from "@/lib/db";
+import Image from "next/image";
 
 export default async function Home() {
   return (
-    <main>
-      <h1>home page</h1>
-    </main>
+    <Image
+      className="think"
+      src="/think.png"
+      width={200}
+      height={200}
+      alt="logo"
+    />
   );
 }
+
+

@@ -7,6 +7,7 @@ import {
 } from "@clerk/nextjs";
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
 
 const manname = localFont({
   src: "./fonts/Maname-Regular.ttf",
@@ -31,8 +32,26 @@ export default function RootLayout({ children }) {
         <body
           className={`${marcellus.variable} ${manname.variable} antialiased flex flex-col items-center`}
         >
-          <h1>Quick Think</h1>
-
+          <header>
+            <h1>Quick Think</h1>
+          </header>
+          <nav>
+            <Link href="/">Home</Link>
+            <Link href="/About">About</Link>
+          </nav>
+          <br />
+          <SignedOut>
+            <SignInButton className={`${marcellus.variable} signIn`} />
+          </SignedOut>
+          <SignedIn >
+            <nav>
+              {/* <b> */}
+              <Link href="/UserProfile">User Profile</Link>
+              <Link href="/Play">Play</Link>
+              {/* </b> */}
+            </nav>
+            <UserButton />
+          </SignedIn>
           {children}
           <footer className="mb-8">
             <SignedOut>
