@@ -1,5 +1,4 @@
 /* Body Of Page */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,27 +21,7 @@ body {
   );
 }
 
-/* Sign In Button */
-
-.think {
-  position: absolute;
-  top: 225px;
-  left: 85px;
-  border-radius: 100px;
-}
-
-.signIn {
-  background-color: #7768ae;
-  border-radius: 10px;
-  color: #fff;
-  width: 150px;
-  height: 45px;
-  text-align: center;
-  cursor: pointer;
-  position: absolute;
-  bottom: 50px;
-  left: 110px;
-}
+/* Title */
 
 h1 {
   padding: 3px;
@@ -52,6 +31,8 @@ h1 {
   text-decoration: underline;
   font-weight: bold;
 }
+
+/* Nav Bar */
 
 nav {
   display: flex;
@@ -63,6 +44,8 @@ nav {
   color: white;
 }
 
+/* Text */
+
 p {
   display: flex;
   flex-direction: row;
@@ -72,4 +55,26 @@ p {
 
 h1 {
   color: purple;
+}
+
+/* Logo */
+.think {
+  position: absolute;
+  top: 225px;
+  left: 85px;
+  border-radius: 100px;
+}
+
+/* Sign In Button */
+.signIn {
+  background-color: #7768ae;
+  border-radius: 10px;
+  color: #fff;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: 110px;
 }
