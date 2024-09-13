@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
             <Link href="/">Home</Link>
             <Link href="/About">About</Link>
           </nav>
-
+          <br />
           <SignedOut>
             <SignInButton className={`${marcellus.variable} signIn`} />
           </SignedOut>

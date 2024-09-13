@@ -54,12 +54,13 @@ p {
   justify-content: center;
 }
 
-
 /* Logo */
 .think {
-  position: absolute;
-  top: 225px;
-  left: 85px;
+  align-items: center;
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 100px;
 }
 
@@ -72,7 +73,8 @@ p {
   height: 45px;
   text-align: center;
   cursor: pointer;
-  position: absolute;
-  bottom: 50px;
-  left: 110px;
+  position: absolute; /* or relative */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 400%);
 }
