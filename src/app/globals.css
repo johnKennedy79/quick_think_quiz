@@ -24,14 +24,24 @@ body {
 
 /* Sign In Button */
 
+.think {
+  position: absolute;
+  top: 225px;
+  left: 85px;
+  border-radius: 100px;
+}
+
 .signIn {
   background-color: #7768ae;
   border-radius: 10px;
   color: #fff;
-  width: 130px;
-  height: 40px;
+  width: 150px;
+  height: 45px;
   text-align: center;
   cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: 110px;
 }
 
 h1 {
