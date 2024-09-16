@@ -9,6 +9,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
 import Footer from "./components/footer";
+import "./media.css"
 
 const manname = localFont({
   src: "./fonts/Maname-Regular.ttf",
@@ -54,9 +55,8 @@ export default function RootLayout({ children }) {
           </SignedIn>
           {children}
           <footer className="footer">
-            <br />
             <Footer />
-            <br />
+     
             <UserButton className="signIn" />
             <SignedOut></SignedOut>
           </footer>

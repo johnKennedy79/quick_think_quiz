@@ -3,6 +3,7 @@ import * as Tabs from "@radix-ui/react-tabs";
 import "./tabs.css";
 
 const TabsDemo = () => (
+
   <Tabs.Root className="TabsRoot" defaultValue="tab1">
     <Tabs.List className="TabsList" aria-label="Manage your account">
       <Tabs.Trigger className="TabsTrigger" value="tab1">
