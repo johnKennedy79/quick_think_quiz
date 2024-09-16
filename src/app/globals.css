@@ -80,10 +80,3 @@ p {
   transform: translate(-50%, 400%);
 }
 
-.userBtn {
-  background-color: #5b2c6f;
-  position: absolute; /* or relative */
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 400%);
-}
