@@ -57,26 +57,23 @@ p {
 
 /* Logo */
 .think {
-  align-items: center;
-  display: block;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 225px;
+  left: 85px;
   border-radius: 100px;
 }
 
 /* Sign In Button */
 .signIn {
-  background-color: #7768ae;
+  background-color: #5b2c6f;
   border-radius: 10px;
   color: #fff;
   width: 150px;
   height: 45px;
   text-align: center;
   cursor: pointer;
-  position: absolute; /* or relative */
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 400%);
+  position: absolute;
+  bottom: 50px;
+  left: 110px;
+  font-weight: bold;
 }
-
