@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^5.5.1",
+    "@radix-ui/colors": "^3.0.0",
+    "@radix-ui/react-tabs": "^1.1.0",
     "clerk": "^0.8.3",
     "next": "14.2.9",
     "pg": "^8.12.0",

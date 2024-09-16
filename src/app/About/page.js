@@ -1,7 +1,8 @@
+import TabsDemo from "../components/tabs";
 export default function About() {
   return (
-    <div>
-      <p>This is the About page</p>
+    <div className="flex justify-center w-screen">
+      <TabsDemo />
     </div>
   );
 }
