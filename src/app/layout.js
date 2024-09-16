@@ -9,7 +9,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
 import Footer from "./components/footer";
-import "./media.css"
+import "./media.css";
 
 const manname = localFont({
   src: "./fonts/Maname-Regular.ttf",
@@ -38,8 +38,12 @@ export default function RootLayout({ children }) {
             <h1>Quick Think</h1>
           </header>
           <nav>
-            <Link href="/">Home</Link>
-            <Link href="/About">About</Link>
+            <Link title="Home" tabIndex={0} href="/">
+              Home
+            </Link>
+            <Link title="About" tabIndex={0} href="/About">
+              About
+            </Link>
           </nav>
           <br />
           <SignedOut>
@@ -48,15 +52,19 @@ export default function RootLayout({ children }) {
           <SignedIn>
             <nav>
               {/* <b> */}
-              <Link href="/UserProfile">User Profile</Link>
-              <Link href="/Play">Play</Link>
+              <Link title="Profile" tabIndex={0} href="/UserProfile">
+                User Profile
+              </Link>
+              <Link title="Play" tabIndex={0} href="/Play">
+                Play
+              </Link>
               {/* </b> */}
             </nav>
           </SignedIn>
           {children}
-          <footer className="footer">
+          <footer title="Footer" className="footer">
             <Footer />
-     
+
             <UserButton className="signIn" />
             <SignedOut></SignedOut>
           </footer>
