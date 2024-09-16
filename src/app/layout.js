@@ -8,6 +8,7 @@ import {
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
+import Footer from "./components/footer";
 
 const manname = localFont({
   src: "./fonts/Maname-Regular.ttf",
@@ -43,19 +44,21 @@ export default function RootLayout({ children }) {
           <SignedOut>
             <SignInButton className={`${marcellus.variable} signIn`} />
           </SignedOut>
-          <SignedIn >
+          <SignedIn>
             <nav>
               {/* <b> */}
               <Link href="/UserProfile">User Profile</Link>
               <Link href="/Play">Play</Link>
               {/* </b> */}
             </nav>
-            <UserButton />
           </SignedIn>
           {children}
-          <footer className="mb-8">
-            <SignedOut>
-            </SignedOut>
+          <footer className="footer">
+            <br />
+            <Footer />
+            <br />
+            <UserButton className="signIn" />
+            <SignedOut></SignedOut>
           </footer>
         </body>
       </html>
