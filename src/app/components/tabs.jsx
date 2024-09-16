@@ -3,7 +3,6 @@ import * as Tabs from "@radix-ui/react-tabs";
 import "./tabs.css";
 
 const TabsDemo = () => (
-
   <Tabs.Root className="TabsRoot" defaultValue="tab1">
     <Tabs.List className="TabsList" aria-label="Manage your account">
       <Tabs.Trigger className="TabsTrigger" value="tab1">
@@ -48,7 +47,7 @@ const TabsDemo = () => (
       </p>
       <p> Ready to put your brainpower to the test? Join Quick Think Today! </p>
     </Tabs.Content>
-    <Tabs.Content className="TabsContent2" value="tab2">
+    <Tabs.Content className="TabsContent" value="tab2">
       <section class="team-section">
         <h1>Meet the Team</h1>
         <div class="team-container">
