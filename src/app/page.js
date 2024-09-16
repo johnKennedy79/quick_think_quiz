@@ -5,6 +5,7 @@ export default async function Home() {
     <div>
       <br />
       <Image
+        title="Quick Think Quiz"
         className="think"
         src="/think.png"
         width={200}
