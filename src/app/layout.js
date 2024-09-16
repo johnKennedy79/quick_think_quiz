@@ -55,11 +55,7 @@ export default function RootLayout({ children }) {
           {children}
           <footer className="mb-8">
             <SignedOut>
-              <SignInButton className={`${marcellus.variable} signIn`} />
             </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
           </footer>
         </body>
       </html>
