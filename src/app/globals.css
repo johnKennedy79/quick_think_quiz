@@ -74,7 +74,7 @@ p {
   height: 45px;
   text-align: center;
   cursor: pointer;
-  position: absolute; /* or relative */
+  /* or relative */
   left: 50%;
   top: 50%;
   transform: translate(-50%, 400%);
@@ -82,7 +82,7 @@ p {
 
 /* Footer */
 .footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;

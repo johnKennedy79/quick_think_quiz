@@ -1,5 +1,6 @@
 import { db } from "@/lib/db";
-import Link from "next/link";
+import { redirect } from "next/navigation";
+
 export default async function QuizOptions() {
   const allSubjects = await db.query(`
     SELECT * FROM quiz_subjects`);
@@ -14,18 +15,10 @@ export default async function QuizOptions() {
     const questSubject = formData.get("subject");
     const questDifficulty = formData.get("difficulty");
     const questCount = formData.get("count");
-    console.log(questSubject, questDifficulty, questCount);
-
-    const quizData = await db.query(
-      `SELECT * FROM quiz_questions 
-        WHERE subject = $1 AND difficulty = $2 
-        LIMIT $3`,
-      [questSubject, questDifficulty, questCount]
+    redirect(
+      `/start?subject=${questSubject}&difficulty=${questDifficulty}&limit=${questCount}`
     );
-    const quiz = quizData.rows;
-    console.log(quiz);
   }
-
   return (
     <div className="flex flex-col items-center w-11/12 m-16 h-96 justify-evenly">
       <form

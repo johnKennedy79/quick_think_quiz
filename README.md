@@ -17,3 +17,5 @@ Stretch Goals
 - The user will be able to create new quiz questions, categories, and difficulty levels as either an admin or regular user.
 - The user will be able to compete with other users in real-time.
 - The user will have access to a personalized scoreboard, where they can check their rankings alongside other players.
+
+Challange we used a form which is a client component to create a dynamic route to a server page that made a get request from our database based on the search perameters in the route once we had the quiz questions that the user had selected we had to set this information in the context file this proved to be quite challanging we passed the questions as props to a component that that was wraped in the context provider and in that component set the state of questions using a use effect function this allowed us to use the questions and data from the questions in other components and allowed us to make functions in the use context file to manage the variouse states of our quiz game.
