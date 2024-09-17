@@ -20,12 +20,12 @@ export default async function QuizOptions() {
     );
   }
   return (
-    <div className="flex flex-col items-center w-11/12 m-16 h-96 justify-evenly">
+    <div className="flex flex-col items-center w-14/12 h-100 justify-evenly">
       <form
         action={getQuest}
-        className="bg-[#5b2c6f] w-10/12 h-full p-8 flex flex-col items-center justify-evenly"
+        className="bg-[#5b2c6f] w-14/12 h-full p-8 flex flex-col items-center justify-evenly"
       >
-        <div>
+        <div className="form">
           <label className="p-4 text-white">Select a Subject:</label>
           <select name="subject" required>
             <option className="p-8 text-center">Subjects</option>
