@@ -1,4 +1,3 @@
-import Footer from "../components/footer";
 import TabsDemo from "../components/tabs";
 export default function About() {
   return (
