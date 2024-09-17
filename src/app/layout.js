@@ -45,7 +45,6 @@ export default function RootLayout({ children }) {
               About
             </Link>
             <SignedIn>
-            <nav>
               <Link
                 className="profile"
                 title="Profile"
@@ -57,7 +56,6 @@ export default function RootLayout({ children }) {
               <Link className="play" title="Play" tabIndex={0} href="/Play">
                 Play
               </Link>
-            </nav>
           </SignedIn>
           </nav>
           <br />
