@@ -1,47 +1,67 @@
 "use client";
-import { createContext, useReducer, useState } from "react";
-
-const initialState = {};
+import { createContext, useState } from "react";
 
 export const QuizContext = createContext();
 
 export const QuizProvider = ({ children }) => {
   const [questions, setQuestions] = useState([]);
-  const [score, setScore] = useState(0);
+  const [selectedAnswer, SetSelectedAnswer] = useState("");
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [checked, setChecked] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [results, setResults] = useState({
     score: 0,
-    correctAnswer: 0,
+    correctAnswers: 0,
     wrongAnswers: 0,
   });
+  const questdata = questions[currentQuestion];
 
-  function increaseScore() {
-    setScore(score + 1);
+  function ChooseAnswer(selected, correctAnswer) {
+    setChecked(true);
+    if (selected === correctAnswer) {
+      SetSelectedAnswer(true);
+      console.log("true");
+    } else {
+      SetSelectedAnswer(false);
+      console.log("false");
+    }
   }
   function nextQuestion() {
+    setResults((prev) =>
+      selectedAnswer
+        ? {
+            ...prev,
+            score: prev.score + questdata.points,
+            correctAnswers: prev.correctAnswers + 1,
+          }
+        : {
+            ...prev,
+            wrongAnswers: prev.wrongAnswers + 1,
+          }
+    );
     if (currentQuestion !== questions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
+      setCurrentQuestion((prev) => prev + 1);
     } else {
+      setShowResult(true);
+      console.log(results);
     }
-  }
-  function chooseAnswer(selected, correctAnswer) {
-    if (selected === correctAnswer) {
-      increaseScore();
-    }
-    nextQuestion();
+    setChecked(false);
   }
   return (
     <QuizContext.Provider
       value={{
         questions,
         setQuestions,
-        score,
-        increaseScore,
+        checked,
+        setChecked,
+        showResult,
+        setShowResult,
+        results,
+        setResults,
         currentQuestion,
+        setCurrentQuestion,
         nextQuestion,
-        chooseAnswer,
+        ChooseAnswer,
       }}
     >
       {children}
