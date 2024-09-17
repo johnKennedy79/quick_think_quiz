@@ -97,7 +97,6 @@ export default function Questions({ quizQuestions }) {
           <button onClick={() => window.location.reload()}>
             Restart quiz with the same settings
           </button>
-          {/* <button onClick={Results(results, questions)}>End Game</button> */}
         </div>
       )}
     </div>
