@@ -1,7 +1,6 @@
 "use client";
 import { QuizContext } from "@/context/QuizContext";
 import { useContext, useEffect, useState } from "react";
-import { Results } from "./results";
 export default function Questions({ quizQuestions }) {
   const {
     questions,
@@ -103,4 +102,3 @@ export default function Questions({ quizQuestions }) {
     </div>
   );
 }
-
