@@ -44,11 +44,8 @@ export default function RootLayout({ children }) {
             <Link className="about" title="About" tabIndex={0} href="/About">
               About
             </Link>
-          </nav>
-          <br />
-          <SignedIn>
+            <SignedIn>
             <nav>
-              {/* <b> */}
               <Link
                 className="profile"
                 title="Profile"
@@ -60,9 +57,10 @@ export default function RootLayout({ children }) {
               <Link className="play" title="Play" tabIndex={0} href="/Play">
                 Play
               </Link>
-              {/* </b> */}
             </nav>
           </SignedIn>
+          </nav>
+          <br />
           {children}
           <footer title="Footer" className="footer">
             <Footer />
@@ -70,7 +68,6 @@ export default function RootLayout({ children }) {
               <SignInButton className={`${marcellus.variable} signIn`} />
             </SignedOut>
             <UserButton className="signIn" />
-            <SignedOut></SignedOut>
           </footer>
         </body>
       </html>

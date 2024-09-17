@@ -99,7 +99,7 @@ h2 {
   height: 45px;
   text-align: center;
   cursor: pointer;
-  position: absolute; /* or relative */
+  /* or relative */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -20%);
@@ -107,7 +107,7 @@ h2 {
 
 /* Footer */
 .footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: -100px;
   width: 100%;
