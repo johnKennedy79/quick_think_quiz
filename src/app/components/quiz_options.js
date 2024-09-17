@@ -75,7 +75,9 @@ export default async function QuizOptions() {
           ></input>
         </div>
         <div>
-          <button className="playBtn">Play</button>
+          <button className="playBtn" tabIndex={0} title="Play">
+            Play
+          </button>
         </div>
       </form>
     </div>

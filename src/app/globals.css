@@ -65,15 +65,6 @@ nav {
   transition: 1s;
 }
 
-/* Text */
-
-p {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Logo */
 .think {
   align-items: center;
@@ -84,6 +75,7 @@ p {
   border-radius: 150px;
 }
 
+/* Sign In Below Text */
 h2 {
   font-weight: bold;
   text-align: center;
@@ -105,6 +97,22 @@ h2 {
   transform: translate(-50%, -20%);
 }
 
+/* Welcome Border In Play */
+.welcome {
+  border-radius: 10px;
+}
+
+/* Makes Play Form Look A Little Better */
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Button To Play */
+
 .playBtn {
   background-color: #fff;
   width: 80px;
@@ -119,9 +127,7 @@ h2 {
   transition: 0.5s;
 }
 
-.quizzone {
-  color: #fff;
-}
+
 
 /* Footer */
 .footer {
@@ -135,13 +141,11 @@ h2 {
   text-align: center;
 }
 
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+/* Footer Text */
 
-.welcome {
-  border-radius: 50px;
+p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
