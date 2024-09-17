@@ -25,6 +25,7 @@ export default async function QuizOptions() {
         action={getQuest}
         className="bg-[#5b2c6f] w-14/12 h-full p-8 flex flex-col items-center justify-evenly"
       >
+        <h1 className="text-white">Welcome To The Quiz Zone!</h1>
         <div className="form">
           <label className="p-4 text-white">Select a Subject:</label>
           <select name="subject" required>
@@ -42,6 +43,7 @@ export default async function QuizOptions() {
             })}
           </select>
         </div>
+        <br />
         <div>
           <label className="p-4 text-white">Select A Difficulty:</label>
           <select name="difficulty" required>
@@ -59,15 +61,17 @@ export default async function QuizOptions() {
             })}
           </select>
         </div>
+        <br />
         <div>
+        <p className="text-white underline">Min - 1 / Max - 45</p>
           <label className="p-4 text-white">Number Of Questions:</label>
           <input
             type="number"
             name="count"
             min="1"
             max="45"
-            placeholder="min 1 - max 45"
-            className="p-2 text-center"
+            placeholder="1"
+            className="p-2 text-center text-black"
           ></input>
         </div>
         <div>
