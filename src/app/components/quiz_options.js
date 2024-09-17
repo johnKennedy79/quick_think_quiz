@@ -43,7 +43,7 @@ export default async function QuizOptions() {
           </select>
         </div>
         <div>
-          <label className="p-4 text-white">Select a Difficulty:</label>
+          <label className="p-4 text-white">Select A Difficulty:</label>
           <select name="difficulty" required>
             <option className="p-8 text-center">Levels</option>
             {difficulties.map((difficulty) => {
@@ -60,7 +60,7 @@ export default async function QuizOptions() {
           </select>
         </div>
         <div>
-          <label className="p-4 text-white">Number of Questions:</label>
+          <label className="p-4 text-white">Number Of Questions:</label>
           <input
             type="number"
             name="count"
@@ -71,7 +71,7 @@ export default async function QuizOptions() {
           ></input>
         </div>
         <div>
-          <button>Play</button>
+          <button className="playBtn">Play</button>
         </div>
       </form>
     </div>
