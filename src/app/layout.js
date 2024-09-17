@@ -38,24 +38,29 @@ export default function RootLayout({ children }) {
             <h1>Quick Think</h1>
           </header>
           <nav>
-            <Link title="Home" tabIndex={0} href="/">
+            <Link className="home" title="Home" tabIndex={0} href="/">
               Home
             </Link>
-            <Link title="About" tabIndex={0} href="/About">
+            <Link className="about" title="About" tabIndex={0} href="/About">
               About
             </Link>
           </nav>
-          <br />
           <SignedOut>
             <SignInButton className={`${marcellus.variable} signIn`} />
           </SignedOut>
+          <br />
           <SignedIn>
             <nav>
               {/* <b> */}
-              <Link title="Profile" tabIndex={0} href="/UserProfile">
+              <Link
+                className="profile"
+                title="Profile"
+                tabIndex={0}
+                href="/UserProfile"
+              >
                 User Profile
               </Link>
-              <Link title="Play" tabIndex={0} href="/Play">
+              <Link className="play" title="Play" tabIndex={0} href="/Play">
                 Play
               </Link>
               {/* </b> */}

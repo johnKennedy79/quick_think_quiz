@@ -28,7 +28,6 @@ h1 {
   font-size: 35px;
   color: #fff;
   text-align: center;
-  /* text-decoration: underline; */
   font-weight: bold;
   color: #5b2c6f;
 }
@@ -44,6 +43,26 @@ nav {
   margin-top: 10px;
   color: white;
   font-weight: bold;
+}
+
+.home:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+
+.about:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+
+.profile:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+
+.play:hover {
+  text-decoration: underline;
+  transition: 1s;
 }
 
 /* Text */
@@ -62,7 +81,7 @@ p {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 100px;
+  border-radius: 150px;
 }
 
 /* Sign In Button */
@@ -74,11 +93,10 @@ p {
   height: 45px;
   text-align: center;
   cursor: pointer;
-  position: absolute;
   position: absolute; /* or relative */
   left: 50%;
   top: 50%;
-  transform: translate(-50%, 400%);
+  transform: translate(-50%, 700%);
 }
 
 /* Footer */
