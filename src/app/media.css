@@ -2,9 +2,9 @@
   .footer {
     position: absolute;
     left: 0;
-    bottom: -400px;
+    bottom: -300px;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: #5b2c6f;
     color: white;
     text-align: center;
@@ -17,7 +17,7 @@
     left: 0;
     bottom: -200px;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: #5b2c6f;
     color: white;
     text-align: center;
@@ -30,7 +30,7 @@
     left: 0;
     bottom: -300px;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: #5b2c6f;
     color: white;
     text-align: center;
@@ -43,7 +43,7 @@
     left: 0;
     bottom: -400px;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: #5b2c6f;
     color: white;
     text-align: center;
@@ -56,7 +56,7 @@
     left: 0;
     bottom: -475px;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: #5b2c6f;
     color: white;
     text-align: center;
@@ -69,7 +69,7 @@
     left: 0;
     bottom: -620px;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: #5b2c6f;
     color: white;
     text-align: center;
