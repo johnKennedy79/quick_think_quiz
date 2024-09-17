@@ -129,8 +129,6 @@ body {
   background-color: white;
   max-width: 1200px;
   margin: 0 auto;
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .team-section h1 {

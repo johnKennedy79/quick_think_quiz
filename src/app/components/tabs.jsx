@@ -32,9 +32,9 @@ const TabsDemo = () => (
       <h1> What is Quick Think? </h1>
       <p className="Text">
         Quick Think is an interactive web app designed to entertain and educate
-        through multiple-choice quizzes. We cover a variety of categories to keep
-        things fresh and exciting: Entertainment: Film - Explore trivia about
-        iconic movies, actors, directors, and the magic behind the screen.
+        through multiple-choice quizzes. We cover a variety of categories to
+        keep things fresh and exciting: Entertainment: Film - Explore trivia
+        about iconic movies, actors, directors, and the magic behind the screen.
         Entertainment: Video Games - Test your gaming knowledge, from retro
         classics to modern blockbusters. General Knowledge - Show off your
         smarts with questions spanning history, culture, geography, and more.
@@ -63,21 +63,21 @@ const TabsDemo = () => (
         <div class="team-container">
           <div class="team-member">
             {/* <img src="" alt="Zaynab Lunat"> */}
-            <h3>Zaynab Lunat </h3>
+            <h3> Zaynab Lunat </h3>
             <p class="role"> UX/UI Designer & Junior Developer </p>
             <p class="bio"></p>
           </div>
 
           <div class="team-member">
             {/* <img src="" alt="John Kennedy"> */}
-            <h3>John Kennedy </h3>
+            <h3> John Kennedy </h3>
             <p class="role"> Full Stack Junior Web Developer </p>
             <p class="bio"></p>
           </div>
 
           <div class="team-member">
             {/* <img src="" alt="Noah Smart"> */}
-            <h3>Noah Smart </h3>
+            <h3> Noah Smart </h3>
             <p class="role"> UX/UI Designer & Junior Developer </p>
             <p class="bio"> </p>
           </div>
