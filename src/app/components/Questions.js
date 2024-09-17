@@ -24,7 +24,7 @@ export default function Questions({ quizQuestions }) {
       <p>
         {currentQuestion + 1}/{questions.length}
       </p>
-      <p>number of correct answers: {score}</p>
+      <p className="quest">Number Of Correct Answers: {score}</p>
       <h1>{questions[currentQuestion]?.question}</h1>
       <div className="flex flex-col">
         <button
