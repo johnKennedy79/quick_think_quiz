@@ -141,3 +141,7 @@ h2 {
   align-items: center;
   text-align: center;
 }
+
+.welcome {
+  border-radius: 50px;
+}

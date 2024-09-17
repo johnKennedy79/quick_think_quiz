@@ -23,7 +23,7 @@ export default async function QuizOptions() {
     <div className="flex flex-col items-center w-14/12 h-100 justify-evenly">
       <form
         action={getQuest}
-        className="bg-[#5b2c6f] w-14/12 h-full p-8 flex flex-col items-center justify-evenly"
+        className="welcome bg-[#5b2c6f] w-14/12 h-full p-8 flex flex-col items-center justify-evenly"
       >
         <h1 className="text-white">Welcome To The Quiz Zone!</h1>
         <div className="form">
@@ -63,7 +63,7 @@ export default async function QuizOptions() {
         </div>
         <br />
         <div>
-        <p className="text-white underline">Min - 1 / Max - 45</p>
+          <p className="text-white underline">Min - 1 / Max - 45</p>
           <label className="p-4 text-white">Number Of Questions:</label>
           <input
             type="number"
