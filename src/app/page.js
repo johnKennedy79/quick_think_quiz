@@ -11,10 +11,12 @@ export default async function Home() {
         title="Quick Think Quiz"
         className="think"
         src="/think.png"
-        width={250}
-        height={250}
+        width={200}
+        height={200}
         alt="logo"
       />
+      <br />
+      <br />
       <h2>Please Sign In Below</h2>
     </div>
   );
