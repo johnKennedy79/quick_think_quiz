@@ -119,6 +119,10 @@ h2 {
   transition: 0.5s;
 }
 
+.quizzone {
+  color: #fff;
+}
+
 /* Footer */
 .footer {
   position: fixed;
