@@ -71,7 +71,7 @@ export default async function QuizOptions() {
             min="1"
             max="45"
             placeholder="1"
-            className="p-2 text-center text-black"
+            className="p-2 text-center text-lime-600"
           ></input>
         </div>
         <div>

@@ -62,28 +62,24 @@ const TabsDemo = () => (
         <h1>Meet the Team</h1>
         <div class="team-container">
           <div class="team-member">
-            {/* <img src="" alt="Zaynab Lunat"> */}
             <h3> Zaynab Lunat </h3>
             <p class="role">UX/UI Designer & Junior Developer </p>
             <p class="bio"></p>
           </div>
 
           <div class="team-member">
-            {/* <img src="" alt="John Kennedy"> */}
             <h3> John Kennedy </h3>
             <p class="role">Full Stack Junior Web Developer </p>
             <p class="bio"></p>
           </div>
 
           <div class="team-member">
-            {/* <img src="" alt="Noah Smart"> */}
             <h3> Noah Smart </h3>
             <p class="role">UX/UI Designer & Junior Developer </p>
             <p class="bio"></p>
           </div>
 
           <div class="team-member">
-            {/* <img src="" alt="Samuel Weston"> */}
             <h3> Samuel Weston </h3>
             <p class="role">Junior Software Developer </p>
             <p class="bio"></p>

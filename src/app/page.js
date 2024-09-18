@@ -13,7 +13,7 @@ export default async function Home() {
         src="/think.png"
         width={200}
         height={200}
-        alt="logo"
+        alt="logo for webpage"
       />
       <br />
       <br />

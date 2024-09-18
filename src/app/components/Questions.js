@@ -18,7 +18,7 @@ export default function Questions({ quizQuestions, addResults, userId }) {
   useEffect(function () {
     setQuestions(quizQuestions);
   }, []);
-  // console.log(questions);
+
   return (
     <div className="w-9/11 h-3/6">
       <p className="currentquestion">

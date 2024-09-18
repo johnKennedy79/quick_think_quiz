@@ -1,6 +1,11 @@
 import { db } from "@/lib/db";
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
+
+export default async function UserProfile() {
+  const user = await currentUser();
+  console.log(user);
+  
 import { QuizProvider } from "@/context/QuizContext";
 import ResultsChart from "../components/Results_Chart";
 import { RadarGraph } from "../components/Radar";
@@ -11,13 +16,11 @@ export default async function UserProfile() {
   const user = await currentUser(); // this is logged in user
   // console.log(user);
 
-  // Check if the user already exists in the database
   const result = await db.query(
     `SELECT * FROM quiz_users WHERE clerk_id = $1`,
     [user.id]
   );
 
-  // If user is not found, insert a new user profile into the database
   if (result.rowCount === 0) {
     await db.query(
       `INSERT INTO quiz_users (clerk_id, user_name, avatar) VALUES ($1, $2, $3)`,
@@ -62,8 +65,3 @@ export default async function UserProfile() {
     </div>
   );
 }
-
-// import image from next
-// make an image Element - which needs a SRC which is existing user.avatar. alt (add width and height)
-// set up - next.config file - package json
-// add any styling
