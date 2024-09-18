@@ -114,7 +114,6 @@ input {
 }
 
 body {
-  /* font-family: */
   background-color: white;
   padding: 20px;
 }
@@ -156,14 +155,6 @@ body {
 .team-member:hover {
   transform: translateY(-10px);
 }
-
-/* .team-member img { 
-  border-radius: **;
-  width:150;
-  height: 150;
-  object-fit: cover;
-  margin-bottom: 15px; 
-} */
 
 .team-member h3 {
   font-size: 1.5rem;
