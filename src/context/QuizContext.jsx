@@ -4,6 +4,7 @@ import { createContext, useState } from "react";
 export const QuizContext = createContext();
 
 export const QuizProvider = ({ children }) => {
+  const [myData, setMyData] = useState([]);
   const [questions, setQuestions] = useState([]);
   const [selectedAnswer, SetSelectedAnswer] = useState("");
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -15,7 +16,8 @@ export const QuizProvider = ({ children }) => {
     wrongAnswers: 0,
   });
   const questdata = questions[currentQuestion];
-
+  console.log(myData);
+  // console.log(questions);
   function ChooseAnswer(selected, correctAnswer) {
     setChecked(true);
     if (selected === correctAnswer) {
@@ -43,13 +45,14 @@ export const QuizProvider = ({ children }) => {
       setCurrentQuestion((prev) => prev + 1);
     } else {
       setShowResult(true);
-      console.log(results);
     }
     setChecked(false);
   }
   return (
     <QuizContext.Provider
       value={{
+        myData,
+        setMyData,
         questions,
         setQuestions,
         checked,

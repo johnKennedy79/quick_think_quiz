@@ -2,7 +2,6 @@
 import { db } from "@/lib/db";
 import { redirect } from "next/navigation";
 export async function addResults(questions, results, userId) {
-  console.log(questions);
   const saveResults = await db.query(
     `
         INSERT INTO quiz_score_table
@@ -17,6 +16,5 @@ export async function addResults(questions, results, userId) {
       results.wrongAnswers,
     ]
   );
-  //   console.log(saveResults);
   redirect("/Play");
 }
