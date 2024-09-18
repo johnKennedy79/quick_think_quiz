@@ -127,7 +127,29 @@ h2 {
   transition: 0.5s;
 }
 
+.userAvatar {
+  background-color: aqua;
+}
 
+.currentquestion {
+  font-size: 20px;
+}
+
+.question {
+  font-size: 30px;
+}
+
+.questone {
+  border: 2px solid purple;
+  border-radius: 10px;
+}
+
+.questone:hover {
+  background-color: #5b2c6f;
+  color: #fff;
+  border: 2px solid purple;
+  border-radius: 10px;
+}
 
 /* Footer */
 .footer {

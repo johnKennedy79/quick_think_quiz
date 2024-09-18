@@ -19,15 +19,16 @@ export default function Questions({ quizQuestions, addResults, userId }) {
   }, []);
   // console.log(quizQuestions);
   return (
-    <div className="w-10/12 h-3/6">
-      <p>
+    <div className="w-9/11 h-3/6">
+      <p className="currentquestion">
         {currentQuestion + 1}/{questions.length}
       </p>
       {!showResult ? (
         <div>
-          <h1>{questions[currentQuestion]?.question}</h1>
+          <h1 className="question">{questions[currentQuestion]?.question}</h1>
           <div className="flex flex-col">
             <button
+              className="questone"
               onClick={() =>
                 ChooseAnswer(
                   questions[currentQuestion]?.answer_1,
@@ -37,7 +38,9 @@ export default function Questions({ quizQuestions, addResults, userId }) {
             >
               {questions[currentQuestion]?.answer_1}
             </button>
+            <br />
             <button
+              className="questone"
               onClick={() =>
                 ChooseAnswer(
                   questions[currentQuestion]?.answer_2,
@@ -47,7 +50,9 @@ export default function Questions({ quizQuestions, addResults, userId }) {
             >
               {questions[currentQuestion]?.answer_2}
             </button>
+            <br />
             <button
+              className="questone"
               onClick={() =>
                 ChooseAnswer(
                   questions[currentQuestion]?.answer_3,
@@ -57,7 +62,9 @@ export default function Questions({ quizQuestions, addResults, userId }) {
             >
               {questions[currentQuestion]?.answer_3}
             </button>
+            <br />
             <button
+              className="questone"
               onClick={() =>
                 ChooseAnswer(
                   questions[currentQuestion]?.answer_4,
@@ -67,8 +74,12 @@ export default function Questions({ quizQuestions, addResults, userId }) {
             >
               {questions[currentQuestion]?.answer_4}
             </button>
-
-            <button onClick={nextQuestion} disabled={!checked}>
+            <br />
+            <button
+              className="questone"
+              onClick={nextQuestion}
+              disabled={!checked}
+            >
               {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
             </button>
           </div>
