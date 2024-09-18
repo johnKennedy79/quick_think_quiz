@@ -151,6 +151,21 @@ h2 {
   border-radius: 10px;
 }
 
+.score {
+  border: 2px purple solid;
+  border-radius: 10px;
+}
+
+.endGame {
+  border: #5b2c6f 2px solid;
+  border-radius: 10px;
+}
+
+.endGame:hover {
+  background-color: #5b2c6f;
+  color: #fff;
+}
+
 /* Footer */
 .footer {
   position: fixed;
