@@ -87,20 +87,27 @@ export default function Questions({ quizQuestions, addResults, userId }) {
       ) : (
         <div>
           <h1>Results</h1>
-          <h2>Overall {(results.correctAnswers / questions.length) * 100}%</h2>
-          <p>
+          <h2 className="score">
+            Overall {(results.correctAnswers / questions.length) * 100}%
+          </h2>
+          <br />
+          <p className="score">
             Total Questions: <span>{questions.length}</span>
           </p>
-          <p>
+          <br />
+          <p className="score">
             Total Score: <span>{results.score}</span>
           </p>
-          <p>
+          <br />
+          <p className="score">
             Correct Answers: <span>{results.correctAnswers}</span>
           </p>
-          <p>
+          <br />
+          <p className="score">
             Wrong Answers: <span>{results.wrongAnswers}</span>
           </p>
-          <button onClick={() => window.location.reload()}>
+          <br />
+          <button className="endGame" onClick={() => window.location.reload()}>
             Restart quiz with the same settings
           </button>
           <ResultBtn
