@@ -142,6 +142,7 @@ h2 {
 .questone {
   border: 2px solid purple;
   border-radius: 10px;
+  text-align: center;
 }
 
 .questone:hover {
@@ -159,6 +160,7 @@ h2 {
 .endGame {
   border: #5b2c6f 2px solid;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .endGame:hover {
