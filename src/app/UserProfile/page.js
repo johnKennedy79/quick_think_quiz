@@ -1,20 +1,15 @@
 import { db } from "@/lib/db";
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
-
-export default async function UserProfile() {
-  const user = await currentUser();
-  console.log(user);
-  
 import { QuizProvider } from "@/context/QuizContext";
 import ResultsChart from "../components/Results_Chart";
 import { RadarGraph } from "../components/Radar";
 
-// import { revalidatePath } from "next/cache";
 
 export default async function UserProfile() {
-  const user = await currentUser(); // this is logged in user
-  // console.log(user);
+  const user = await currentUser();
+  console.log(user);
+
 
   const result = await db.query(
     `SELECT * FROM quiz_users WHERE clerk_id = $1`,
@@ -65,3 +60,4 @@ export default async function UserProfile() {
     </div>
   );
 }
+
