@@ -1,7 +1,8 @@
 "use client";
 import { QuizContext } from "@/context/QuizContext";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import ResultBtn from "./results";
+import Image from "next/image";
 export default function Questions({ quizQuestions, addResults, userId }) {
   const {
     questions,
@@ -17,7 +18,7 @@ export default function Questions({ quizQuestions, addResults, userId }) {
   useEffect(function () {
     setQuestions(quizQuestions);
   }, []);
-  // console.log(quizQuestions);
+  // console.log(questions);
   return (
     <div className="w-10/12 h-3/6">
       <p>
@@ -76,7 +77,18 @@ export default function Questions({ quizQuestions, addResults, userId }) {
       ) : (
         <div>
           <h1>Results</h1>
-          <h2>Overall {(results.correctAnswers / questions.length) * 100}%</h2>
+          <Image
+            title="Quiz results trophy"
+            className="think"
+            src="/trophy.png"
+            width={200}
+            height={200}
+            alt="Trophy"
+          />
+          <h2>
+            Overall
+            {Math.round((results.correctAnswers / questions.length) * 100)}%
+          </h2>
           <p>
             Total Questions: <span>{questions.length}</span>
           </p>

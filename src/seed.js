@@ -22,14 +22,14 @@ CREATE TABLE IF NOT EXISTS quiz_users (
     points INT)
     
     CREATE TABLE IF NOT EXISTS quiz_score_table(
-    id SERIAL PRIMARY KEY,
-    clerk_id TEXT REFERENCES users(clerk_id),
-    timestamp timestamp default now(),
-    subject	TEXT,
-    difficulty TEXT,
-    score INT,
-    no_questions INT,
-    correct_answers,
-    wrong_answers
-    )
+id SERIAL PRIMARY KEY,
+clerk_id TEXT REFERENCES quiz_users(clerk_id),
+timestamp timestamp default now(),
+subject	TEXT,
+difficulty TEXT,
+score INT,
+no_questions INT,
+correct_answers INT,
+wrong_answers INT
+)
     `);
