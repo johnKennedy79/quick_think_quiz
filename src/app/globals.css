@@ -166,6 +166,15 @@ h2 {
   color: #fff;
 }
 
+.image {
+  border-radius: 60px;
+}
+
+.user {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /* Footer */
 .footer {
   position: fixed;

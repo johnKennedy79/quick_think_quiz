@@ -23,13 +23,7 @@ export default async function UserProfile() {
 
     return (
       <div>
-        <Image
-          src={user.imageUrl}
-          alt="User Avatar"
-          width={100}
-          height={100}
-          className="userAvatar"
-        />
+        <Image src={user.imageUrl} alt="User Avatar" width={100} height={100} />
         <p>{user.username.avatar}</p>
       </div>
     );
@@ -39,14 +33,15 @@ export default async function UserProfile() {
 
   return (
     <div>
-      <h2>User Profile</h2>
       <Image
         src={existingUser.avatar}
         alt="User Avatar"
         width={100}
         height={100}
+        className="image"
       />
-      <p>{existingUser.user_name}</p>
+      <br />
+      <p className="user">{existingUser.user_name}</p>
     </div>
   );
 }
