@@ -1,7 +1,8 @@
 "use client";
 import { QuizContext } from "@/context/QuizContext";
 import { useContext, useEffect, useState } from "react";
-export default function Questions({ quizQuestions }) {
+import ResultBtn from "./results";
+export default function Questions({ quizQuestions, addResults, userId }) {
   const {
     questions,
     setQuestions,
@@ -16,7 +17,7 @@ export default function Questions({ quizQuestions }) {
   useEffect(function () {
     setQuestions(quizQuestions);
   }, []);
-  console.log(quizQuestions);
+  // console.log(quizQuestions);
   return (
     <div className="w-10/12 h-3/6">
       <p>
@@ -66,15 +67,10 @@ export default function Questions({ quizQuestions }) {
             >
               {questions[currentQuestion]?.answer_4}
             </button>
-            {checked ? (
-              <button onClick={nextQuestion}>
-                {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
-              </button>
-            ) : (
-              <button onClick={nextQuestion} disabled>
-                {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
-              </button>
-            )}
+
+            <button onClick={nextQuestion} disabled={!checked}>
+              {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
+            </button>
           </div>
         </div>
       ) : (
@@ -96,7 +92,12 @@ export default function Questions({ quizQuestions }) {
           <button onClick={() => window.location.reload()}>
             Restart quiz with the same settings
           </button>
-          {/* <button onClick={Results(results, questions)}>End Game</button> */}
+          <ResultBtn
+            results={results}
+            questions={questions}
+            addResults={addResults}
+            userId={userId}
+          />
         </div>
       )}
     </div>
