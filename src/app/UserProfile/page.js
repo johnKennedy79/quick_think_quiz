@@ -48,14 +48,17 @@ export default async function UserProfile() {
         alt="User Avatar"
         width={100}
         height={100}
+        className="image"
       />
-      <p>{existingUser.user_name}</p>
+      <br />
+      <p className="user">{existingUser.user_name}</p>
       <div className="w-11/12">
         <QuizProvider>
           {/* <ResultsChart chartData={chartData} /> */}
           <RadarGraph />
         </QuizProvider>
       </div>
+
     </div>
   );
 }

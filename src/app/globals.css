@@ -127,7 +127,55 @@ h2 {
   transition: 0.5s;
 }
 
+.userAvatar {
+  background-color: aqua;
+}
 
+.currentquestion {
+  font-size: 20px;
+}
+
+.question {
+  font-size: 30px;
+}
+
+.questone {
+  border: 2px solid purple;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.questone:hover {
+  background-color: #5b2c6f;
+  color: #fff;
+  border: 2px solid purple;
+  border-radius: 10px;
+}
+
+.score {
+  border: 2px purple solid;
+  border-radius: 10px;
+}
+
+.endGame {
+  border: #5b2c6f 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.endGame:hover {
+  background-color: #5b2c6f;
+  color: #fff;
+}
+
+.image {
+  border-radius: 60px;
+}
+
+.user {
+  font-size: 18px;
+  font-weight: bold;
+}
 
 /* Footer */
 .footer {
