@@ -5,6 +5,16 @@ import Image from "next/image";
 export default async function UserProfile() {
   const user = await currentUser();
   console.log(user);
+  
+import { QuizProvider } from "@/context/QuizContext";
+import ResultsChart from "../components/Results_Chart";
+import { RadarGraph } from "../components/Radar";
+
+// import { revalidatePath } from "next/cache";
+
+export default async function UserProfile() {
+  const user = await currentUser(); // this is logged in user
+  // console.log(user);
 
   const result = await db.query(
     `SELECT * FROM quiz_users WHERE clerk_id = $1`,
@@ -16,7 +26,7 @@ export default async function UserProfile() {
       `INSERT INTO quiz_users (clerk_id, user_name, avatar) VALUES ($1, $2, $3)`,
       [user.id, user.username, user.imageUrl]
     );
-    console.log("user.id, user.username, avatar");
+    // console.log("user.id, user.username, avatar");
 
     return (
       <div>
@@ -27,9 +37,15 @@ export default async function UserProfile() {
   }
 
   const existingUser = result.rows[0];
-
+  const data = await db.query(
+    `SELECT * FROM quiz_score_table WHERE clerk_id = $1`,
+    [existingUser.clerk_id]
+  );
+  const chartData = data.rows;
+  // console.log(chartData);
   return (
-    <div>
+    <div className="w-2/3">
+      <h2>User Profile</h2>
       <Image
         src={existingUser.avatar}
         alt="User Avatar"
@@ -39,6 +55,13 @@ export default async function UserProfile() {
       />
       <br />
       <p className="user">{existingUser.user_name}</p>
+      <div className="w-11/12">
+        <QuizProvider>
+          {/* <ResultsChart chartData={chartData} /> */}
+          <RadarGraph />
+        </QuizProvider>
+      </div>
+
     </div>
   );
 }
