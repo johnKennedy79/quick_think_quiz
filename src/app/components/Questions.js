@@ -99,7 +99,7 @@ export default function Questions({ quizQuestions, addResults, userId }) {
             className="think"
           />
           <br />
-          <h2 className="score">
+          <h2 className="scores">
             Overall{" "}
             {Math.round((results.correctAnswers / questions.length) * 100)}%
           </h2>
