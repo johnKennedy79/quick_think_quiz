@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Thinks from "./public/think.png";
+import Thinks from "./public/thinks.png";
 
 export default async function Home() {
   return (
