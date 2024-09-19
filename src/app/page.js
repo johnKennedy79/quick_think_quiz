@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Thinks from "./public/thinks.png";
 
 export default async function Home() {
   return (
@@ -8,12 +9,12 @@ export default async function Home() {
       </header>
       <br />
       <Image
-        title="Quick Think Quiz"
+        title="Quick Think Quiz Logo"
         className="think"
-        src="/think2.svg"
+        src={Thinks}
         width={200}
         height={200}
-        alt="logo for webpage"
+        alt="This Is The Logo"
       />
       <br />
       <br />
@@ -21,3 +22,4 @@ export default async function Home() {
     </div>
   );
 }
+
