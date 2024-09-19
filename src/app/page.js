@@ -9,12 +9,12 @@ export default async function Home() {
       </header>
       <br />
       <Image
-        title="Quick Think Quiz"
+        title="Quick Think Quiz Logo"
         className="think"
         src={Thinks}
         width={200}
         height={200}
-        alt="logo for webpage"
+        alt="This Is The Logo"
       />
       <br />
       <br />
