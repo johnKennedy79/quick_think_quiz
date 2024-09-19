@@ -3,10 +3,10 @@ import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
 import { QuizProvider } from "@/context/QuizContext";
 import { RadarGraph } from "../components/Radar";
+import DataSet4 from "@/lib/resultData";
 
 export default async function UserProfile() {
   const user = await currentUser();
-  console.log(user);
 
   const result = await db.query(
     `SELECT * FROM quiz_users WHERE clerk_id = $1`,
@@ -27,6 +27,10 @@ export default async function UserProfile() {
     );
   }
 
+  const existingUser = result.rows[0];
+
+  const dataSet = await DataSet4();
+ 
   return (
     <div className="w-2/3">
       <Image
@@ -40,7 +44,7 @@ export default async function UserProfile() {
       <p className="user">{existingUser.user_name}</p>
       <div>
         <QuizProvider>
-          <RadarGraph />
+          <RadarGraph dataSet={dataSet} />
         </QuizProvider>
       </div>
     </div>
