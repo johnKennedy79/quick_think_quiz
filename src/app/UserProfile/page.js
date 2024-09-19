@@ -31,7 +31,7 @@ export default async function UserProfile() {
   const dataSet = await DataSet4();
 
   return (
-    <div className="w-full">
+    <div className="w-2/3">
       <h2>User Profile</h2>
       <Image
         src={existingUser.avatar}
@@ -42,7 +42,7 @@ export default async function UserProfile() {
       />
       <br />
       <p className="user">{existingUser.user_name}</p>
-      <div className="w-11/12 mb-8">
+      <div>
         <QuizProvider>
           <RadarGraph dataSet={dataSet} />
         </QuizProvider>
