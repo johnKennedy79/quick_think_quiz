@@ -9,7 +9,9 @@ import {
   Title,
   Tooltip,
   Legend,
+  ArcElement,
 } from "chart.js";
+import { useState } from "react";
 ChartJS.register(
   RadarController,
   LineElement,
@@ -17,32 +19,113 @@ ChartJS.register(
   RadialLinearScale,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  ArcElement
 );
-export const RadarGraph = () => {
+
+export const RadarGraph = ({ dataSet }) => {
   const options = {
     scales: {
       r: {
-        angleLines: {
-          display: false,
+        grid: {
+          color: "red",
+          circular: true,
         },
-        suggestedMin: 0,
-        // suggestedMax: 500,
+        angleLines: {
+          color: "red",
+          display: true,
+        },
       },
     },
   };
+  const labelsSet = [
+    "Science and Nature",
+    "General Knowledge",
+    "Entertainment Video Games",
+    "Entertainment Film",
+  ];
+
+  function totalData() {
+    const scores = dataSet.subjectTotals;
+    const subjects = labelsSet;
+    const totalData = [];
+    for (let i = 0; i < subjects.length; i++) {
+      let score = 0;
+      for (let j = 0; j < scores.length; j++) {
+        if (subjects[i] == scores[j].subject) {
+          score = scores[j].totalScore;
+        }
+      }
+      totalData.push(score);
+    }
+    return totalData;
+  }
+
+  function totalDataEasy() {
+    const scores = dataSet.subjectDifficultyTotals;
+    const subjects = labelsSet;
+    const totalData = [];
+    for (let i = 0; i < subjects.length; i++) {
+      let score = 0;
+      for (let j = 0; j < scores.length; j++) {
+        // check difficulty
+        if (
+          subjects[i] === scores[j].subject &&
+          scores[j].difficulty === "Easy"
+        ) {
+          score = scores[j].totalScore;
+        }
+      }
+      totalData.push(score);
+    }
+    return totalData;
+  }
+
+  function totalDataMedium() {
+    const scores = dataSet.subjectDifficultyTotals;
+    const subjects = labelsSet;
+    const totalData = [];
+    for (let i = 0; i < subjects.length; i++) {
+      let score = 0;
+      for (let j = 0; j < scores.length; j++) {
+        // check difficulty
+        if (
+          subjects[i] === scores[j].subject &&
+          scores[j].difficulty === "Medium"
+        ) {
+          score = scores[j].totalScore;
+        }
+      }
+      totalData.push(score);
+    }
+    return totalData;
+  }
+  function totalDataHard() {
+    const scores = dataSet.subjectDifficultyTotals;
+    const subjects = labelsSet;
+    const totalData = [];
+    for (let i = 0; i < subjects.length; i++) {
+      let score = 0;
+      for (let j = 0; j < scores.length; j++) {
+        // check difficulty
+        if (
+          subjects[i] === scores[j].subject &&
+          scores[j].difficulty === "Hard"
+        ) {
+          score = scores[j].totalScore;
+        }
+      }
+      totalData.push(score);
+    }
+    return totalData;
+  }
 
   const data = {
-    labels: [
-      "Science and Nature",
-      "General Knowledge",
-      "Entertainment Video Games",
-      "Entertainment Film",
-    ],
+    labels: labelsSet,
     datasets: [
       {
         label: "Easy",
-        data: [65, 59, 90, 81],
+        data: totalDataEasy(),
         fill: true,
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgb(255, 99, 132)",
@@ -53,18 +136,18 @@ export const RadarGraph = () => {
       },
       {
         label: "Medium",
-        data: [40, 20, 30, 10],
+        data: totalDataMedium(),
         fill: true,
-        backgroundColor: "rgba(180, 99, 132, 0.2)",
-        borderColor: "green",
-        pointBackgroundColor: "rgb(255, 99, 132)",
+        backgroundColor: "rgba(19, 180, 21, 0.2)",
+        borderColor: "rgb(19, 180, 21)",
+        pointBackgroundColor: "rgb(19, 180, 21)",
         pointBorderColor: "#fff",
         pointHoverBackgroundColor: "#fff",
         pointHoverBorderColor: "rgb(255, 99, 132)",
       },
       {
         label: "Hard",
-        data: [28, 40, 19, 27],
+        data: totalDataHard(),
         fill: true,
         backgroundColor: "rgba(54, 162, 235, 0.2)",
         borderColor: "rgb(54, 162, 235)",
@@ -75,20 +158,21 @@ export const RadarGraph = () => {
       },
       {
         label: "Total",
-        data: [133, 119, 139, 118],
+        data: totalData(),
         fill: true,
-        backgroundColor: "rgba(54, 162, 235, 0.2)",
+        backgroundColor: "rgba(91, 44, 111, 0.2)",
         borderColor: "#5b2c6f",
-        pointBackgroundColor: "rgb(54, 162, 235)",
+        pointBackgroundColor: "rgb(91, 44, 111)",
         pointBorderColor: "#5b2c6f",
         pointHoverBackgroundColor: "#fff",
         pointHoverBorderColor: "rgb(54, 162, 235)",
       },
     ],
   };
+
   return (
     <div>
-      <h1 className="text-center">Your Scores (sample)</h1>
+      <h1 className="text-center">Your Scores</h1>
       <Radar options={options} data={data} />
     </div>
   );
