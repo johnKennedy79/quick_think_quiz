@@ -127,17 +127,18 @@ h2 {
   transition: 0.5s;
 }
 
-.userAvatar {
-  background-color: aqua;
-}
-
+/* Size Of Current Question You Are On */
 .currentquestion {
   font-size: 20px;
 }
 
+/* Title Of Question */
+
 .question {
   font-size: 30px;
 }
+
+/* Boxes Of Answers */
 
 .questone {
   border: 2px solid purple;
@@ -152,10 +153,14 @@ h2 {
   border-radius: 10px;
 }
 
+/* End Page Of Questions */
+
 .score {
   border: 2px purple solid;
   border-radius: 10px;
 }
+
+/* To End Game On Play Page */
 
 .endGame {
   border: #5b2c6f 2px solid;
@@ -168,13 +173,29 @@ h2 {
   color: #fff;
 }
 
-.image {
-  border-radius: 60px;
-}
 
+/* User Page */
 .user {
   font-size: 18px;
   font-weight: bold;
+}
+
+.image {
+  border-radius: 60px;
+  align-items: center;
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scoreTitle {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Footer */

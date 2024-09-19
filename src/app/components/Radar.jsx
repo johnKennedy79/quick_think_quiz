@@ -87,8 +87,8 @@ export const RadarGraph = () => {
     ],
   };
   return (
-    <div className="w-full h-full">
-      <h1>Your Scores (sample)</h1>
+    <div>
+      <h1 className="text-center">Your Scores (sample)</h1>
       <Radar options={options} data={data} />
     </div>
   );
