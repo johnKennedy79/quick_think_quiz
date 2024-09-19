@@ -2,7 +2,7 @@ import { db } from "@/lib/db";
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
 import { QuizProvider } from "@/context/QuizContext";
-import ResultsChart from "../components/Results_Chart";
+// import ResultsChart from "../components/Results_Chart";
 import { RadarGraph } from "../components/Radar";
 
 

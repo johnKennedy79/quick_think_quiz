@@ -176,13 +176,13 @@ h2 {
   border-radius: 10px;
   cursor: pointer;
   width: 350px;
+  text-align: center;
 }
 
 .endGame:hover {
   background-color: #5b2c6f;
   color: #fff;
 }
-
 
 /* User Page */
 .user {
