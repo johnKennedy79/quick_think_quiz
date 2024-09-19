@@ -16,16 +16,13 @@ export const QuizProvider = ({ children }) => {
     wrongAnswers: 0,
   });
   const questdata = questions[currentQuestion];
-  console.log(myData);
-  // console.log(questions);
+
   function ChooseAnswer(selected, correctAnswer) {
     setChecked(true);
     if (selected === correctAnswer) {
       SetSelectedAnswer(true);
-      console.log("true");
     } else {
       SetSelectedAnswer(false);
-      console.log("false");
     }
   }
   function nextQuestion() {

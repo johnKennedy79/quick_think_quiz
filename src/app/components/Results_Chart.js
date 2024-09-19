@@ -7,12 +7,12 @@ import { Bar } from "react-chartjs-2";
 export default function ResultsChart({ chartData }) {
   ChartJS.register(BarElement);
   const { myData, setMyData } = useContext(QuizContext);
-  console.log(chartData);
+  // console.log(chartData);
 
   useEffect(function () {
     setMyData(chartData);
   }, []);
-  console.log(myData);
+  // console.log(myData);
 
   const labels = [
     "Science and Nature",

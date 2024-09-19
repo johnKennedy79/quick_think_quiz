@@ -10,7 +10,7 @@ export default async function Home() {
       <Image
         title="Quick Think Quiz"
         className="think"
-        src="/think.png"
+        src="/think2.svg"
         width={200}
         height={200}
         alt="logo for webpage"
