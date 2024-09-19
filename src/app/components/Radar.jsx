@@ -161,18 +161,18 @@ export const RadarGraph = ({ dataSet }) => {
         data: totalData(),
         fill: true,
         backgroundColor: "rgba(91, 44, 111, 0.2)",
-        borderColor: "#5b2c6f",
+        borderColor: "rgb(91, 44, 111)",
         pointBackgroundColor: "rgb(91, 44, 111)",
-        pointBorderColor: "#5b2c6f",
+        pointBorderColor: "#fff",
         pointHoverBackgroundColor: "#fff",
-        pointHoverBorderColor: "rgb(54, 162, 235)",
+        pointHoverBorderColor: "rgb(91, 44, 111)",
       },
     ],
   };
 
   return (
-    <div className="w-full h-full">
-      <h1>Your Scores</h1>
+    <div>
+      <h1 className="text-center">Your Scores</h1>
       <Radar options={options} data={data} />
     </div>
   );

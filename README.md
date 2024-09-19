@@ -18,36 +18,38 @@ Stretch Goals
 - The user will be able to compete with other users in real-time.
 - The user will have access to a personalized scoreboard, where they can check their rankings alongside other players.
 
-Challange we used a form which is a client component to create a dynamic route to a server page that made a get request from our database based on the search perameters in the route once we had the quiz questions that the user had selected we had to set this information in the context file this proved to be quite challanging we passed the questions as props to a component that that was wraped in the context provider and in that component set the state of questions using a use effect function this allowed us to use the questions and data from the questions in other components and allowed us to make functions in the use context file to manage the variouse states of our quiz game.
+Challenge we used a form which is a client component to create a dynamic route to a server page that made a get request from our database based on the search parameters in the route once we had the quiz questions that the user had selected we had to set this information in the context file this proved to be quite challenging we passed the questions as props to a component that that was wrapped in the context provider and in that component set the state of questions using a use effect function this allowed us to use the questions and data from the questions in other components and allowed us to make functions in the use context file to manage the various states of our quiz game.
 
-##- Styling or wireframes or accessibility
+##- Styling or wire frames or accessibility
 
 we all worked on that as a team Zaynab and Noah done most of the graphic elements samuel done the about page and John contributed ideas and flow.
 
 ##- Javascript or jsx or Radix or other 3rd party items
 
-Samuel worken on tabs primative for the about page.
+Samuel worked on tabs primitive for the about page.
 
 ##- Database schema or queries or form
 
-John set up the schema, we all contributed to data entry of the questions, Zaynab is working on userprofile data
+John set up the schema, we all contributed to data entry of the questions, Zaynab is working on user profile data
 
 ##- Components or routes or dynamic routes
 
-Zaynab set up the page lay out and routes. John created dynamic search route to get the gize questions. sam set up the radix about component Noah done the footer, logo, and cup icon and worked on the layout for components in the home page
+Zaynab set up the page lay out and routes. John created dynamic search route to get the questions. sam set up the radix about component Noah done the footer, logo, and cup icon and worked on the layout for components in the home page
 
 ##- Authentication (implementing or using user data) deployment or hosting
 
-Had difficulty installing Clerk authentication pair programmed as a group to try and resolve the issue we all ennded up uninstalling and reinstalling Clerk and .env.local file to the root folder.
+Had difficulty installing Clerk authentication pair programmed as a group to try and resolve the issue we all ended up uninstalling and reinstalling Clerk and .env.local file to the root folder.
 
 ##- User stories or planning diagrams or managing Trello or reflections
 
-We all worked on stories, planning and Trello together once the project got underway Zaynab and Noah have managed and kept the trello upto date
+We all worked on stories, planning and Trello together once the project got underway Zaynab and Noah have managed and kept the trello up-to date
 
 ##- Creating pull requests or resolving conflicts or managing the project repo
 
-we all worked together on pull request and merge conflicts
+We all worked together on pull request and merge conflicts.
 
-##- Preparing documentation or preparing
+##- Preparing documentation or preparing.
 
-Noah made an early start on the presantation
+Noah made an early start on the presentation, and looked through the tech educators marking scheme to make sure everything is included.
+
+Noah and Sam added some media into the webpage.

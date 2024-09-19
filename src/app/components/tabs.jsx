@@ -24,10 +24,10 @@ const TabsDemo = () => (
     </Tabs.List>
     <Tabs.Content className="TabsContent" value="tab1">
       <p className="Text">
-        Your destination for fast-paced, brain-teasing fun! Whether you're a
-        movie buff, video game enthusiast, trivia master, or science geek. Quick
-        Think offers a diverse of challenging and engaging questions to test
-        your knowledge and decision-making skills.
+        Your destination for fast-paced, brain-teasing fun! Whether you&lsquo;re
+        a movie buff, video game enthusiast, trivia master, or science geek.
+        Quick Think offers a diverse of challenging and engaging questions to
+        test your knowledge and decision-making skills.
       </p>
       <h1> What is Quick Think? </h1>
       <p className="Text">
@@ -41,19 +41,15 @@ const TabsDemo = () => (
         Science & Nature - Dive into the wonders of the natural world and the
         mysteries of the universe.
       </p>
-      <p>
-        {" "}
-        Each Quiz is timed, encouraging quick thinking under pressure. Can you
-        beat the clock and claim the top spot on our leader board?
-      </p>
+
       <h1> Why Quick Think? </h1>
       <p>
         {" "}
         Our mission is to create a fun, fast, and engaging platform where users
         can expand their knowledge, challenge friends, and enjoy healthy
-        competition. Where you're here to learn something new, sharpen your
-        skills, or just pass the time with fun quizzes, Quick Think is here to
-        keep you entertained.{" "}
+        competition. Where you&lsquo;re here to learn something new, sharpen
+        your skills, or just pass the time with fun quizzes, Quick Think is here
+        to keep you entertained.{" "}
       </p>
       <p> Ready to put your brainpower to the test? Join Quick Think Today! </p>
     </Tabs.Content>

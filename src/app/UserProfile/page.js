@@ -4,6 +4,7 @@ import Image from "next/image";
 import { QuizProvider } from "@/context/QuizContext";
 import { RadarGraph } from "../components/Radar";
 import DataSet4 from "@/lib/resultData";
+
 export default async function UserProfile() {
   const user = await currentUser();
 
@@ -32,7 +33,6 @@ export default async function UserProfile() {
 
   return (
     <div className="w-2/3">
-      <h2>User Profile</h2>
       <Image
         src={existingUser.avatar}
         alt="User Avatar"
