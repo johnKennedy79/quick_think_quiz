@@ -46,6 +46,8 @@ export default async function UserProfile() {
         <QuizProvider>
           <RadarGraph dataSet={dataSet} />
         </QuizProvider>
+        <br />
+        <br />
       </div>
     </div>
   );
