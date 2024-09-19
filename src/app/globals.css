@@ -160,12 +160,22 @@ h2 {
   border-radius: 10px;
 }
 
+.scores {
+  border: 2px #5b2c6f solid;
+  background-color: #5b2c6f;
+  color: #fff;
+  border-radius: 10px;
+}
+
 /* To End Game On Play Page */
 
 .endGame {
+  margin: 0 auto;
+  display: block;
   border: #5b2c6f 2px solid;
   border-radius: 10px;
   cursor: pointer;
+  width: 350px;
 }
 
 .endGame:hover {
