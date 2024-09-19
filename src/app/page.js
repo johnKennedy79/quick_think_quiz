@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Think from "./public/think.png";
+import Thinks from "./public/think.png";
 
 export default async function Home() {
   return (
@@ -11,7 +11,7 @@ export default async function Home() {
       <Image
         title="Quick Think Quiz"
         className="think"
-        src={Think}
+        src={Thinks}
         width={200}
         height={200}
         alt="logo for webpage"
