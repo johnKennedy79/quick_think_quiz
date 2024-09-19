@@ -19,6 +19,7 @@ export default function Questions({ quizQuestions, addResults, userId }) {
 
   useEffect(function () {
     setQuestions(quizQuestions);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
