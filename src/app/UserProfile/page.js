@@ -40,7 +40,6 @@ export default async function UserProfile() {
   // console.log(chartData);
   return (
     <div className="w-2/3">
-      <h2>User Profile</h2>
       <Image
         src={existingUser.avatar}
         alt="User Avatar"
@@ -50,10 +49,10 @@ export default async function UserProfile() {
       />
       <br />
       <p className="user">{existingUser.user_name}</p>
-      <div className="w-11/12">
+      <div>
         <QuizProvider>
           {/* <ResultsChart chartData={chartData} /> */}
-          <RadarGraph />
+          <RadarGraph/>
         </QuizProvider>
       </div>
 

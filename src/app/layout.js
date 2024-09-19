@@ -16,6 +16,7 @@ const manname = localFont({
   variable: "--font-maname-reg",
   weight: "400",
 });
+
 const marcellus = localFont({
   src: "./fonts/Marcellus-Regular.ttf",
   variable: "--font-marcellus-reg",
