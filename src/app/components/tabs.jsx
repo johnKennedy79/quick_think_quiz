@@ -41,11 +41,7 @@ const TabsDemo = () => (
         Science & Nature - Dive into the wonders of the natural world and the
         mysteries of the universe.
       </p>
-      <p>
-        {" "}
-        Each Quiz is timed, encouraging quick thinking under pressure. Can you
-        beat the clock and claim the top spot on our leader board?
-      </p>
+
       <h1> Why Quick Think? </h1>
       <p>
         {" "}
