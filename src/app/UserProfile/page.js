@@ -30,7 +30,7 @@ export default async function UserProfile() {
   const existingUser = result.rows[0];
 
   const dataSet = await DataSet4();
- 
+
   return (
     <div className="w-2/3">
       <Image

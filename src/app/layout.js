@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${marcellus.variable} ${manname.variable} antialiased flex flex-col items-center`}
+          className={`${marcellus.variable} ${manname.variable} antialiased flex flex-col items-center w-screen h-screen`}
         >
           <header>
             <h1>Quick Think</h1>
