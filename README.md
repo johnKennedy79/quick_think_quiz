@@ -4,6 +4,8 @@ The project is currently in the planning phase, which you can view here: Figma B
 
 You can view our completed project here deployed on Vercel - https://quickkthinkquiz.vercel.app/
 
+This was our PowerPoint presentation - https://docs.google.com/presentation/d/1CuW9r7SJPXVfbxriVC-yWP3afndRMImHqRkiDqM9aVs/edit?usp=sharing
+
 ## This app is part of a group project within the Tech Educators Boot Camp and will be built using Next.js and React. Key features include user authentication, modern UI design, and a fully functional, mobile-first responsive layout. The app will be deployed online, allowing users to play and interact with it by September 20th. Our team—comprising John, Noah, Sam, and myself—will be contributing to this project daily via our shared repository.
 
 User Stories
